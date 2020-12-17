@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search</title>
+		<style type="text/css" media="screen">
+			.links{
+				display: inline-block;
+				float: right;
+				padding-right: 10%;	
+			}
+			.links a{			
+				text-decoration: none;
+				padding: 5px;
+			}
+			.links a:hover{
+				background-color: black;
+				color: white;		
+				text-decoration: none;
+			}
+			.form{
+				clear: both;
+				width: 80%;
+				margin: auto;
+				text-align: center;
+				padding-top:15%
+			}
+			input[type="text"]{				
+				background-image: url("search.png");
+				background-position: 10px center;
+				background-repeat: no-repeat; 	
+				background-size: 15px 15px;
+				display: block;
+				border-radius: 20px;
+				padding: 15px;
+				padding-left: 40px;
+				margin: 10px auto;
+				width: 40%; 
+				border: 1px solid #ddd;
+			}
+			input[type="submit"], form a{
+				display: inline-block;
+				border-radius: 5px;
+				padding: 10px;
+				margin: 10px auto;
+				border: none;
+				background-color:#efefef;
+			}
+			input[type="submit"]:hover, form a:hover{
+				border-radius: 5px;
+				padding: 10px;
+				margin: 10px auto;
+				border: 1px solid gray;
+			}
+			form a{
+				text-decoration: none;
+				color: black;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="links">
+			<a href="image_search.html">Images Search</a> |
+			<a href="advanced_search.html">Advanced Search</a>
+		</div>
+		<div class="form">
+			<form action="https://www.google.com/search">
+				<input type="text" name="q" />
+				<input type="submit" value="Google Search" />				
+			<a href="https://www.google.com/doodles/">I'm Feeling Lucky </a>
+			</form>
+		</div>
+
+	</body>
+
+</html>

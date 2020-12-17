@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Images Search</title>
+		<style type="text/css" media="screen">
+			.links{
+				float: right;
+				display: inline-block;
+				padding-right: 10%;
+			}
+			.form{
+				clear: both;
+				width: 80%;
+				margin: auto;
+				text-align: center;
+				padding-top:15%
+			}
+			input[type="text"]{				
+				background-image: url("search.png"), url("camera.png"), url("search.png");
+				background-position: 10px center, center right 35px, center right 10px;
+				background-repeat: no-repeat; 	
+				background-size: 15px 15px, 20px 20px, 15px 15px;
+				display: block;
+				border-radius: 20px;
+				padding: 15px;
+				padding-left: 40px;
+				padding-right: 70px;
+				margin: 10px auto;
+				width: 40%; 
+				border: 1px solid #ddd;
+			}
+			input[type="submit"]{
+				display: inline-block;
+				border-radius: 5px;
+				padding: 10px;
+				margin: 10px auto;
+				border: none;
+				background-color:#efefef;
+			}
+			input[type="submit"]:hover{
+				border-radius: 5px;
+				padding: 10px;
+				margin: 10px auto;
+				border: 1px solid gray;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="links">
+			<a href="index.html">Google Search</a>
+		</div>
+		<div class="form">
+			<form action="https://www.google.com/search">
+				<input type="text" name="q" />
+				<input type="hidden" name="tbm" value="isch">
+				<input type="submit" value="Google Images Search" />
+			</form>
+		</div>
+
+	</body>
+
+</html>
